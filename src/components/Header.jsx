@@ -12,7 +12,7 @@ function Header({setErrorMsg, loggedIn, setLoggedIn}) {
     return (
         <nav className="topnav">
             <div className="divplacement">
-                <NavLink to="/SignUp"> Registration </NavLink>
+                <NavLink to="/SignUp"> Sign up </NavLink>
             <NavLink to="/"> Welcome</NavLink>
             <NavLink to="/AnimalFacts"> Find your recipe  </NavLink>
                 {!loggedIn ? (<Login setLoggedIn={setLoggedIn} loginCredentials={loginCredentials} setLoginCredentials={setLoginCredentials} setErrorMsg={setErrorMsg}  />) :
