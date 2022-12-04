@@ -1,4 +1,6 @@
-const URL = "http://localhost:8080/CA2_backend_war_exploded";
+import app from "../App.jsx";
+
+const URL = "http://localhost:8080/Eksamensprojekt_war_exploded/"
 
 function handleHttpErrors(res) {
     if (!res.ok) {
@@ -38,6 +40,7 @@ function apiFacade() {
         const options = makeOptions("GET", true);
         return fetch(URL + "/api/info/user", options).then(handleHttpErrors);
     }
+
 
     function makeOptions(method, addToken, body) {
         method = method ? method : 'GET';
