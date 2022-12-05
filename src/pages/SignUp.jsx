@@ -20,8 +20,8 @@ const [usernameSignup, setUsernameSignup] = useState('')
     return (
         <>
         <div className="divplacement">
-            <div className="form-body">
-                <div className="username">
+            <div className="App">
+                <div className="registration">
                     <label className="form__label" htmlFor="Username">Username </label>
                     <input className="form__input" type="text" id="Username" placeholder="Username here" onChange={(e) => {
                         setUsernameSignup(e.target.value);

@@ -4,6 +4,7 @@ import Header from "./components/Header.jsx";
 import Welcome from "./pages/Welcome.jsx"
 import AnimalFacts from "./pages/AnimalFacts"
 import SignUp from "./pages/SignUp.jsx";
+import Registration from "./pages/Registration.jsx";
 
 function App(props) {
 
@@ -15,7 +16,7 @@ function App(props) {
             <Routes>
                 <Route path="/" element={<Welcome/>}/>
                 <Route path="/AnimalFacts" element={<AnimalFacts/>}/>
-                <Route path="/SignUp" element={<SignUp/>}/>
+                <Route path="/Registration" element={<Registration/>}/>
                 <Route path="*" element={<h1>Page Not Found !!!!</h1>}/>
             </Routes>
         </>

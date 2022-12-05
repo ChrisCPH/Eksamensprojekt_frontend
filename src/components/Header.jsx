@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import Login from "./Login.jsx";
 import LoggedIn from "./LoggedIn.jsx";
 import "../styles/header.css"
+import Registration from "../pages/Registration.jsx";
 
 
 function Header({setErrorMsg, loggedIn, setLoggedIn}) {
@@ -12,7 +13,7 @@ function Header({setErrorMsg, loggedIn, setLoggedIn}) {
     return (
         <nav className="topnav">
             <div className="divplacement">
-                <NavLink to="/SignUp"> Sign up </NavLink>
+                <NavLink to="/Registration"> Sign up </NavLink>
             <NavLink to="/"> Welcome</NavLink>
             <NavLink to="/AnimalFacts"> Find your recipe  </NavLink>
                 {!loggedIn ? (<Login setLoggedIn={setLoggedIn} loginCredentials={loginCredentials} setLoginCredentials={setLoginCredentials} setErrorMsg={setErrorMsg}  />) :
