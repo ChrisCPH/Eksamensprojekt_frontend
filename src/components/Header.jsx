@@ -11,6 +11,7 @@ function Header({setErrorMsg, loggedIn, setLoggedIn, loginCredentials, setLoginC
         <nav className="topnav">
             <div className="divplacement">
             <NavLink to="/"> Welcome</NavLink>
+                <NavLink to="/ViewMealPlans"> View Mealplans </NavLink>
             <NavLink to="/FindMeals"> Find meals</NavLink>
             {!loggedIn ? (<Login setLoggedIn={setLoggedIn} loginCredentials={loginCredentials} setLoginCredentials={setLoginCredentials} setErrorMsg={setErrorMsg}  />) :
                 (<div>
